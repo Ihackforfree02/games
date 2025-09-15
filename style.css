@@ -1,0 +1,88 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 40px;
+  color: #f0db4f;
+  text-shadow: 0 0 10px #f0db4f, 0 0 20px #f0db4f;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #f0db4f; }
+  to { text-shadow: 0 0 20px #f0db4f, 0 0 30px #f0db4f; }
+}
+
+h2, h3 {
+  text-align: center;
+  color: #00ffff;
+  margin-top: 20px;
+}
+
+/* Main container */
+main {
+  border: 5px solid black;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Game list */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* Game links */
+a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-bottom: 1px dashed #00ffff;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Logo image */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 150px;
+}
+
+/* Wiki link section */
+.wiki-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.wiki-link img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.wiki-link img:hover {
+  transform: scale(1.1);
+}
