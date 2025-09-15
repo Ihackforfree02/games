@@ -1,25 +1,4 @@
-#searchInput {
-  padding: 12px 20px;
-  width: 60%;
-  max-width: 500px;
-  border-radius: 999px; /* fully rounded */
-  border: none;
-  font-size: 1rem;
-  background-color: #000000;
-  color: #00ffff;
-  box-shadow: 0 0 10px #00ffff;
-  outline: none;
-  transition: box-shadow 0.3s ease;
-}
-
-#searchInput::placeholder {
-  color: #00ffff;
-  opacity: 0.6;
-}
-
-#searchInput:focus {
-  box-shadow: 0 0 20px #00ffff;
-}/* Reset and base styles */
+/* Reset and base styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -29,6 +8,35 @@ body, html {
   color: #ffffff;
   overflow-x: hidden;
 }
+
+/* Search bar */
+#searchInput {
+  padding: 12px 20px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 40px; /* rounded like Google */
+  border: 2px solid #00ffff;
+  font-size: 1rem;
+  background-color: #000000;
+  color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+#searchInput::placeholder {
+  color: #00ffff;
+  opacity: 0.6;
+}
+
+#searchInput:focus {
+  box-shadow: 0 0 20px #00ffff;
+  border-color: #ffffff;
+}
+
+/* Game buttons */
 .game-button {
   display: inline-block;
   padding: 10px 20px;
@@ -48,6 +56,7 @@ body, html {
   color: #0f2027;
   box-shadow: 0 0 20px #00ffff;
 }
+
 /* Glowing header */
 h1 {
   text-align: center;
@@ -92,7 +101,7 @@ li {
   margin: 10px 0;
 }
 
-/* Game links */
+/* Game links (fallback) */
 a {
   color: #00ffff;
   text-decoration: none;
@@ -116,19 +125,4 @@ img {
   display: block;
   margin: 20px auto;
   max-width: 160px;
-}
-
-/* Wiki link section */
-.wiki-link {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.wiki-link img {
-  width: 100px;
-  transition: transform 0.3s ease;
-}
-
-.wiki-link img:hover {
-  transform: scale(1.1);
 }
