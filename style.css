@@ -8,7 +8,25 @@ body, html {
   color: #ffffff;
   overflow-x: hidden;
 }
+.game-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 6px;
+  font-size: 1rem;
+  color: #00ffff;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 8px #00ffff;
+  transition: all 0.3s ease;
+}
 
+.game-button:hover {
+  background-color: #00ffff;
+  color: #0f2027;
+  box-shadow: 0 0 20px #00ffff;
+}
 /* Glowing header */
 h1 {
   text-align: center;
