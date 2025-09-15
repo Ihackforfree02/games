@@ -1,4 +1,25 @@
-/* Reset and base styles */
+#searchInput {
+  padding: 12px 20px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 999px; /* fully rounded */
+  border: none;
+  font-size: 1rem;
+  background-color: #000000;
+  color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+#searchInput::placeholder {
+  color: #00ffff;
+  opacity: 0.6;
+}
+
+#searchInput:focus {
+  box-shadow: 0 0 20px #00ffff;
+}/* Reset and base styles */
 body, html {
   margin: 0;
   padding: 0;
